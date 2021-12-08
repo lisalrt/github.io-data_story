@@ -1,6 +1,6 @@
 # Site settings
-title: Representation of females in media
-email: your-email@domain.com
+title: Females in media
+#email: your-email@domain.com
 url: https://example.github.io
 description: "A data-based exploration of female representation in media."
 
@@ -22,8 +22,8 @@ social:
   #  url: http://stackoverflow.com/questions/tagged/jekyll
   #- title: bitbucket
   #  url: http://bitbucket.org/jekyll
-  #- title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+  - title: github
+    url: https://lisalrt.github.io/females-in-media/
 
 # Build settings
 markdown: kramdown
