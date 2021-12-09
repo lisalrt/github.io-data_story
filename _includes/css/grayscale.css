@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #495057; /*{{ site.color.primary-dark }};*/
+    background-color: {{ site.color.primary-dark }};
 }
 
 .navbar-custom .navbar-brand {
@@ -250,6 +250,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    color: #495057;
 }
 
 .download-section {
@@ -264,11 +265,11 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
+/*#map {
     width: 100%;
     height: 200px;
     margin-top: 100px;
-}
+}*/
 
 @media(min-width:767px) {
     .content-section {
