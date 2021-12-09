@@ -280,10 +280,10 @@ a:focus {
         padding: 100px 0;
     }
 
-    #map {
+    /*#map {
         height: 400px;
         margin-top: 250px;
-    }
+    }*/
 }
 
 .btn {
@@ -337,6 +337,7 @@ ul.banner-social-buttons li {
 
 footer {
     padding: 50px 0;
+    background-color: {{ site.color.primary-dark }};
 }
 
 footer p {
