@@ -1,13 +1,46 @@
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
+        <head> 
+            <script src="jquery.js"></script> 
+            <script> 
+            $(function(){
+              $("#ldaPlot").load("lda.html"); 
+            });
+            </script> 
+        </head> 
 
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Part 2</h2>
-                    <p>Lets put part 2 here</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h2>Respected vs popoular (find better title)</h2>
+
+                    <h3>(2.1) Who represents females?</h3>
+                    <ul> 
+                        <li>Add table with list of media names</li>
+                        <li>Bar/lineplot of popular vs respected over the years</li>
+                    </ul>
+
+                    <h3>(2.2) But what does she talk about?</h3>
+                    <ul> 
+                        <li>Show decomposition in categories per year respected vs popular</li>
+                        <li>Descrribe/text: Comment that respected is lower than popular and there is peak for females in entertainment 2018</li>
+                        <li>Show top speakers for 2018  entertainment for popular and culture for respecte</li>
+                        <li>Describe and link to (2.4): In both respected and popular, the categories with most females are in entertainment and culture</li>
+                    </ul>
+
+                    <h3>(2.3) Now let’s consider unique speakers, to assess the diversity of speakers represented within in each gender in entertainment</h3>
+                    <ul>
+                        <li>Factor of males to females to show that in reality still more men than women in entert.</li>
+                        <li>Quote length comparison for entert.</li>
+                    </ul>
+
+                    <h3>(2.4)Which sitenames generated all these female quotes? (for entertainment and culture where we see more women)</h3>
+
+                    <h3>(2.5) Unsupervised clustering</h3>
+                    <p>Take the sitenames found in (2.4) which apparently quote women more (with repetition, not unique). See if the topics in the quotes found corresponds to culture and entert. Or just to a comparison between 2 sitenames</p>
+                    
                 </div>
+                
             </div>
         </div>
     </section>
