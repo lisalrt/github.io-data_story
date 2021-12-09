@@ -6,7 +6,7 @@ description: "A data-based exploration of female representation in media. >- Let
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#fff' # white text
+  primary-dark: '#495057' # grey text
   links: '#006D77' #blue
 
 # Footer settings
