@@ -25,7 +25,7 @@ social:
   #- title: bitbucket
   #  url: http://bitbucket.org/jekyll
   - title: github
-    url: https://lisalrt.github.io/females-in-media/
+    url: https://github.com/lisalrt/females-in-media
 
 # Build settings
 markdown: kramdown
