@@ -2,7 +2,9 @@
 title: "Females in media"
 #email: your-email@domain.com
 url: https://example.github.io
-description: "A data-based exploration of female representation in media. \n \n Let's dive in"
+description: |+ A data-based exploration of female representation in media. 
+
+Let's dive in
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
