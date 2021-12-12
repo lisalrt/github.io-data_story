@@ -1,0 +1,116 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 750px;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": "United Kingdom", "image": ["https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"], "label": "United Kingdom", "shape": "image", "title": "Total of 304449 quotes"}, {"id": "United States of America", "image": ["https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"], "label": "United States of America", "shape": "image", "title": "Total of 1421650 quotes"}, {"id": "South Africa", "image": ["https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"], "label": "South Africa", "shape": "image", "title": "Total of 11582 quotes"}, {"color": "#529dc8", "id": "Donald Trump", "label": "Donald Trump", "shape": "dot", "size": 36, "title": "73 years old and quoted 355924 times by United States of America, 8976 times by United Kingdom and 2351 times by South Africa"}, {"color": "#cc78bc", "id": "Hillary Clinton", "label": "Hillary Clinton", "shape": "dot", "size": 15, "title": "72 years old and quoted 39966 times by United States of America"}, {"color": "#cc78bc", "id": "Nancy Pelosi", "label": "Nancy Pelosi", "shape": "dot", "size": 13, "title": "80 years old and quoted 27515 times by United States of America"}, {"color": "#cc78bc", "id": "Sarah Huckabee Sanders", "label": "Sarah Huckabee Sanders", "shape": "dot", "size": 11, "title": "37 years old and quoted 17931 times by United States of America"}, {"color": "#529dc8", "id": "Jeremy Corbyn", "label": "Jeremy Corbyn", "shape": "dot", "size": 18, "title": "70 years old and quoted 12487 times by United Kingdom"}, {"color": "#529dc8", "id": "Boris Johnson", "label": "Boris Johnson", "shape": "dot", "size": 16, "title": "55 years old and quoted 9396 times by United Kingdom"}, {"color": "#cc78bc", "id": "Theresa May", "label": "Theresa May", "shape": "dot", "size": 13, "title": "63 years old and quoted 5901 times by United Kingdom"}, {"color": "#cc78bc", "id": "Katie Price", "label": "Katie Price", "shape": "dot", "size": 11, "title": "40 years old and quoted 4204 times by United Kingdom"}, {"color": "#cc78bc", "id": "Meghan Markle", "label": "Meghan Markle", "shape": "dot", "size": 10, "title": "38 years old and quoted 3774 times by United Kingdom"}, {"color": "#529dc8", "id": "Mmusi Maimane", "label": "Mmusi Maimane", "shape": "dot", "size": 31, "title": "39 years old and quoted 1657 times by South Africa"}, {"color": "#529dc8", "id": "Julius Malema", "label": "Julius Malema", "shape": "dot", "size": 30, "title": "39 years old and quoted 1566 times by South Africa"}, {"color": "#cc78bc", "id": "Patricia de Lille", "label": "Patricia de Lille", "shape": "dot", "size": 21, "title": "69 years old and quoted 678 times by South Africa"}, {"color": "#cc78bc", "id": "Helen Zille", "label": "Helen Zille", "shape": "dot", "size": 17, "title": "68 years old and quoted 422 times by South Africa"}, {"color": "#cc78bc", "id": "Busisiwe Mkhwebane", "label": "Busisiwe Mkhwebane", "shape": "dot", "size": 16, "title": "50 years old and quoted 398 times by South Africa"}]);
+        edges = new vis.DataSet([{"from": "United Kingdom", "to": "Donald Trump"}, {"from": "United Kingdom", "to": "Jeremy Corbyn"}, {"from": "United Kingdom", "to": "Boris Johnson"}, {"from": "United Kingdom", "to": "Theresa May"}, {"from": "United Kingdom", "to": "Katie Price"}, {"from": "United Kingdom", "to": "Meghan Markle"}, {"from": "United States of America", "to": "Donald Trump"}, {"from": "United States of America", "to": "Hillary Clinton"}, {"from": "United States of America", "to": "Nancy Pelosi"}, {"from": "United States of America", "to": "Sarah Huckabee Sanders"}, {"from": "South Africa", "to": "Donald Trump"}, {"from": "South Africa", "to": "Mmusi Maimane"}, {"from": "South Africa", "to": "Julius Malema"}, {"from": "South Africa", "to": "Patricia de Lille"}, {"from": "South Africa", "to": "Helen Zille"}, {"from": "South Africa", "to": "Busisiwe Mkhwebane"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 2,
+            "damping": 0.2,
+            "gravitationalConstant": -40000,
+            "springConstant": 0.0001,
+            "springLength": 100
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
