@@ -34,12 +34,13 @@
                 </p>
                 <br/>
                 
-                <div style="height:800px">
-                    <h3 style="text-align:left;vertical-align:left;float:left;width:50%;"></h3> 
+                <div style="height:800px;text-align:left; vertical-align:center;">
+                    <p style="text-align:left;vertical-align:left;float:left;width:50%;">
                         {% include Mean_percentage_Female_quotes.html %}
-                    <h3 style="text-align:left; vertical-align:center;">How are females quoted around the world compared to male?</h3>
-                    <p>Small analysis of the plot, maybe focusing on the one hand on non english speaking countries and then on the english countries
-                        Justify the choice UK USA and SA</p>
+                        <h3>How are females quoted around the world compared to male?</h3>
+                        <p>Small analysis of the plot, maybe focusing on the one hand on non english speaking countries and then on the english countries
+                            Justify the choice UK USA and SA</p>
+                        </p>
                     </p>
                 </div>
                 <br/>
@@ -64,7 +65,13 @@
                 <p>
                     The evolution of female quotes for the UK is encouraging but what if it is always the same female that is quoted... 
                     On the contrary, the number of unique speakers might increase in the USA and South Africa which could be seen as counterbalancing the fact that their percentage stays constant.
-                </p>  
+                </p> 
+                <div style="height:500px;background-color: white;">
+                    <p style="text-align:right;vertical-align:center;">
+                        {% include networkx_unique_speakers.html %}
+                    The top-3 unique speakers for country and gender depicts blabla
+                    </p>
+                </div> 
             
 
                 <br/>
