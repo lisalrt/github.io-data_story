@@ -50,16 +50,14 @@
                     Having spotted interesting english-speaking countries to focus on, their respective evolution over the years supports the choice.
                 </p>
                 <br/>
-                <div style="height:500px;">
-                    <div style="background-color: white; float: left; width:60%;overflow: hidden;margin-left: -15px;">                        
+                <div style="height:500px;clear:both">
+                    <div style="background-color: white; float: left; width: 80%; margin-left:-15px;">                        
                         {% include evolution_years.html %}
                     </div>
-                    <div>
-                        <h4>What is the evolution of the percentage of female quoted accross the years?</h4>
-                        <p style="text-align:left;">
-                            The percentage of females quotes gradually increases for the UK where as it stays constant for the other two countries. blablabla develop
-                        </p>
-                    </div> 
+                    <h4>What is the evolution of the percentage of female quoted accross the years?</h4>
+                    <p style="text-align:left;">
+                        The percentage of females quotes gradually increases for the UK where as it stays constant for the other two countries. blablabla develop
+                    </p>
                 </div>
                 <br/>
                 <br/>
@@ -77,28 +75,28 @@
                     On the contrary, the number of unique speakers might increase in the USA and South Africa which could be seen as counterbalancing the fact that their percentage stays constant.
                 </p> 
                 <br/>
-                <div style="height:100px;width:100%;background-color: white;clear: both;">
-                    <div style="float:left;width:50%;">
+                
+                <div style="height:250px;clear:both">
+                    <div style="background-color: white; float: left; width: 80%; margin-left:-15px;">                        
                         {% include networkx_unique_speakers.html %}
                     </div>
-                    <div style="float:right;width:50%;">
-                        <h4>And in terms of unique speakers?</h4>  
-                        <p style="text-align:left;vertical-align:left;">
-                            The top-3 unique speakers for country and gender depicts blabla
-                        </p>
-                    </div>
-                </div> 
+                    <p style="text-align:left;">
+                        The top-3 unique speakers for country and gender depicts blabla
+                    </p>
+                </div>
                 <br/>
 
-                <h4>What is the age of those speakers ?</h4> 
+                <h4>What is the age of those speakers ? 
+                    Is the distribution the same for male/female and for each country ? 
+                    Are some countries quoting more young/old female ? If yes, who are they ? 
+                    What is their influence in that age range (does it explain a peak) ? 
+                </h4> 
                 <div style="height:500px;width:100%;background-color: white;clear:both">
                     {% include age_range.html %}
                 </div>
                 <div style="float:left;width:50%;"> 
                     <p style="text-align:left;vertical-align:left;">
-                        Is the distribution the same for male/female and for each country ? 
-                        Are some countries quoting more young/old female ? If yes, who are they ? 
-                        What is their influence in that age range (does it explain a peak) ? 
+                        The age of the speakers blablabla 
                     </p>
                 </div> 
                 <br/>
