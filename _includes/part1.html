@@ -51,7 +51,7 @@
                 </p>
                 <br/>
                 <div style="height:500px;clear:both">
-                    <div style="background-color: white; float: left; width: 80%; margin-left:-15px;">                        
+                    <div style="background-color: white; float: right; width: 80%; margin-right:-15px;">                        
                         {% include evolution_years.html %}
                     </div>
                     <h4>What is the evolution of the percentage of female quoted accross the years?</h4>
@@ -77,7 +77,7 @@
                 <br/>
                 
                 <div style="height:250px;clear:both">
-                    <div style="background-color: white; float: left; width: 80%; margin-left:-15px;">                        
+                    <div style="background-color: white; float: left; width: 40%; margin-left:-15px;">                        
                         {% include networkx_unique_speakers.html %}
                     </div>
                     <p style="text-align:left;">
@@ -86,11 +86,13 @@
                 </div>
                 <br/>
 
-                <h4>What is the age of those speakers ? 
-                    Is the distribution the same for male/female and for each country ? 
-                    Are some countries quoting more young/old female ? If yes, who are they ? 
-                    What is their influence in that age range (does it explain a peak) ? 
-                </h4> 
+                <div>
+                    <h4>What is the age of those speakers ? 
+                        Is the distribution the same for male/female and for each country ? 
+                        Are some countries quoting more young/old female ? If yes, who are they ? 
+                        What is their influence in that age range (does it explain a peak) ? 
+                    </h4> 
+                </div>
                 <div style="height:500px;width:100%;background-color: white;clear:both">
                     {% include age_range.html %}
                 </div>
