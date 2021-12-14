@@ -30,7 +30,7 @@
                 <br/>
 
                 <div style="height:500px;">
-                    <div style="background-color: white; float: left; width:75%;overflow: hidden;">                        
+                    <div style="background-color: white; float: left; width:75%;overflow: hidden;margin-left: -15px;">                        
                         {% include Mean_percentage_Female_quotes.html %}
                          <!--{% include Mean_percentage_Female_quotes.html max-width="200px" caption="Trying"%}-->
                     </div>
@@ -51,7 +51,7 @@
                 </p>
                 <br/>
                 <div style="height:500px;">
-                    <div style="background-color: white; float: left; width:75%;margin:0%;padding:0%;overflow: hidden;">                        
+                    <div style="background-color: white; float: left; width:60%;overflow: hidden;margin-left: -15px;">                        
                         {% include evolution_years.html %}
                     </div>
                     <div>
@@ -90,18 +90,16 @@
                 </div> 
                 <br/>
 
+                <h4>What is the age of those speakers ?</h4> 
                 <div style="height:500px;width:100%;background-color: white;clear:both">
-                    <div style="float:left;width:50%;">
-                        {% include age_range.html %}
-                    </div>
-                    <div style="float:right;width:50%;">
-                        <h4>What is the age of those speakers ?</h4>  
-                        <p style="text-align:left;vertical-align:left;">
-                            Is the distribution the same for male/female and for each country ? 
-                            Are some countries quoting more young/old female ? If yes, who are they ? 
-                            What is their influence in that age range (does it explain a peak) ? 
-                        </p>
-                    </div>
+                    {% include age_range.html %}
+                </div>
+                <div style="float:left;width:50%;"> 
+                    <p style="text-align:left;vertical-align:left;">
+                        Is the distribution the same for male/female and for each country ? 
+                        Are some countries quoting more young/old female ? If yes, who are they ? 
+                        What is their influence in that age range (does it explain a peak) ? 
+                    </p>
                 </div> 
                 <br/>
 
