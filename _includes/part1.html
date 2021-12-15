@@ -71,7 +71,7 @@
                 </div>
 
                 <div style="height:1000px">
-                    <div style="background-color: white; float: right; width:700px; margin-right: -25px">                        
+                    <div style="background-color: white; float: right; width:700px; margin-right: -20px">                        
                         {% include evolution_years.html %}
                     </div>
                         <h3 style="text-align: left; vertical-align: center; margin-right: 5px;">What is the evolution of the percentage of female quoted accross the years?</h3>
@@ -89,17 +89,18 @@
                         {% include networkx_unique_speakers.html %}
                         <p style="font-size:9">Fly over the nodes to have more info on the age and exact number of quotes </p>
                     </div>
-                    <h3 style="text-align: left; vertical-align: center; margin-left:5px;">Who are the most quoted people?</h3>
-                    <p style="text-align:justify; margin-left: 5px;">
+                    <div>
+                        <h3 style="text-align: left; vertical-align: center; margin-left:5px;">Who are the most quoted people?</h3>
+                        <p style="text-align:justify; margin-left: 5px;">
                                 The interactive network shows the top 3 speakers for each country and gender, in terms of number of occurrences in the dataset. The size of a node is related to the proportion of quotes from this particular speaker in the country that quoted him/her and the colors stand for gender. <br><br>
                                 Here again, the unequal gender representation is manifested, since for all countries, all the <span style="color: #529dc8;">male nodes</span> are bigger than the <span style="color: #cc78bc;">female nodes</span>. Only the UK seems to have a "fair" repartition of nodes and a more diverse spectrum of speakers. Donald Trump with its many designations (?) is on its own the Top-3 of males in the american press with about 1/4 of the american quotes from 2015 to 2020. Indeed he was the President of the USA from 2016 to 2020 and was omnipresent in all categories. Interestingly, the 3 most quoted females in South Africa are all involved in politics and in the age range of 50-70 years old. On the other hand, Katie Price and Meghan Markle are media personalities and much younger. This stresses out how the age of the speakers can be crucial and determinant for his/her presence in the media, and this depending on the country. 
-                    </p>
+                        </p>
+                    </div>                    
                 </div>
 
-                
 
                 <div style="height:300px;">
-                    <div style="background-color: #40916c; width:600px; margin:auto">
+                    <div style="background-color: #065a60; width:600px; margin:auto">
                         <p style="color:white; padding: 13px; font-weight: bold"> For 100 female quotes, 10 originate from different speakers in South Africa, but only 5 and 2 for the United Kingdom and the United States of America, respectively</p>
                     <!--
                     real percentages UK: 5.11 %, USA: 2.19 %, SA: 10.11 %
