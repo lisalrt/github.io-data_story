@@ -13,7 +13,7 @@
 
 
                     <div style="height:550px">
-                        <img src="img/table_media.jpg" style="float:left; width:400px;height:300px;margin-right:30px;">
+                        <img src="img/table_media.jpg" style="float:left; width:400px;height:300px;margin-right:50px; margin-bottom: 20px;">
                         <h3 style="text-align: left; vertical-align: center;">Which media are considered respected or popular?</h3> 
                         <p style="text-align:justify; margin-left: 10px;">Different media sources are likely to have different tendencies in the content they create, the news they cover and consequently the quotes they use. Readers also perceive the quality of news and articles in function of the media source. In order to explore whether prejudices on media sources are truly reflected in real life, this section compares the representation of females in respected media and popular media. Respected media includes media that is known to share news stories backed by facts and deemed more reliable. Popular media instead contains the media pages that are most often visited, but not necessarily "respected". A subset of quotes is analysed and quotes originating only from a shortlist of media sources are kept, as pressented in the table. Using the reduced dataset, quotes were selected if they belonged to a shortlist of media sources that was also in the dataset. These media sources were selected according to the following sources: <a href="https://www.forbes.com/sites/berlinschoolofcreativeleadership/2017/02/01/10-journalism-brands-where-you-will-find-real-facts-rather-than-alternative-facts/?sh=1c18e04de9b5" target="_blank">respected</a>,  and <a href=" https://www.similarweb.com/top-websites/category/news-and-media/" target="_blank">popular.</a>
                         </p>
@@ -23,7 +23,7 @@
                     <div style="height:450px">
                         <img src="img/prop_type_media_females_lineplot.svg" style="float:right; width:500px;height:400px;margin-left:30px;">
                         <h3 style="text-align: center; vertical-align: center;">And how do they evolve over the years?</h3> 
-                        <p style="text-align:justify;">At a first glance, how do these two groups of media differ in female represenation through quotes? While one could expect that respected media would perform better in terms of equal gender representation, this figure shows that it is not the case at all. In fact, a gap is present between popular and respected media every single year. <br><br> The increase in proportion of females over the years in either group is encouraging, with the drop in 2020 likely present due to the reduced number of quotes collected for that year. The increasing trend surely reflects the awareness on gender issues that has increasingly been voiced and mediatised<br> 
+                        <p style="text-align:justify; margin-bottom: 20px;">At a first glance, how do these two groups of media differ in female represenation through quotes? While one could expect that respected media would perform better in terms of equal gender representation, this figure shows that it is not the case at all. In fact, a gap is present between popular and respected media every single year. <br><br> The increase in proportion of females over the years in either group is encouraging, with the drop in 2020 likely present due to the reduced number of quotes collected for that year. The increasing trend surely reflects the awareness on gender issues that has increasingly been voiced and mediatised<br> 
                         </p>
                     </div>
 
@@ -34,12 +34,12 @@
                     <br>
                     <br>
 
-                    <div style="height:500px">
+                    <div style="height:600px">
                         <div style="background-color: white; float: left; width: 70%; margin-left:-15px;">                        
                             {% include percentage_quotes_females_media.html %}
                         </div>
-                        <h3 style="text-align: center; vertical-align: center;">How does the trend break down within a group of media?</h3> 
-                        <p style="text-align:justify;">Within the respected or the popular media, not all the sources present the same proportion of female quotes, with proportions ranging between around 12% and 25%. Reuters, a source considered to be respected, presents to lowest proportion of female quotes. </p>
+                        <h3 style="text-align: left; vertical-align: center;">How does the trend break down within a group of media?</h3> 
+                        <p style="text-align:justify;">Within the respected or the popular media, not all the sources present the same proportion of female quotes, with proportions ranging between around 12% and 25%. Reuters, a source considered to be respected, presents to lowest proportion of female quotes. Other respected media such as Washington Post, BBC and Politico behave similarly between them, starting at a low proportion of females in 2015 and gradually increasing throughout the years. Within the popular media, sources such as CNN have higher proportions early on (18.5% in 2015) and continue to increase. It is also the popular media that present the quickest increase: msn goes from 14.6% in 2015 to 25.2% in 2018. </p>
                     </div>
 
                     <div style="height:1000px">
@@ -47,9 +47,9 @@
                         <h3 style="text-align: center; vertical-align: center;">But what do females talk about?</h3> 
                         <p style="text-align:justify;">When thinking of the possible differences between "respected" and "popular" media, the differences in topics or categories covered come to mind. Indeed, the type of news presented by the sources differ thematically, politically and in terms of audience. The overall proportion of females does not give insight into <span style="font-style:italic;">what</span> they are quoted for and how this differs between the respected and popular media. 
                         <br><br>
-                        By analysing keywords used in the URL of the article or page containing the quote, the quotes themselves are sorted into different categories of news. This allows to see if there are trends between genders based on topics, and understand how this could explain the results observed for the proportion of feamles depending on the mdeia source.</p>
+                        By analysing keywords present in the URL of the article or page containing the quote, the quotes themselves are sorted into different categories of news. Several categories were predefined and indicator words allowed to classify the quotes into these various categories. This allows to see if there are trends between genders based on topics, and help explain the results observed for the proportion of feamles depending on the mdeia source.</p>
                         </p>
-                        <div style="float: center; padding-left: 50px;">
+                        <div style="float: center; margin-left: 50px;">
                             {% include percentage_quotes_females_category.html %}
                         </div>
                     </div>
