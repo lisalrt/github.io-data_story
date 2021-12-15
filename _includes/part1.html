@@ -71,11 +71,11 @@
                 </div>
 
                 <div style="height:1000px">
-                    <div style="background-color: white; float: right; width:700px; margin-right: 5px">                        
+                    <div style="background-color: white; float: right; width:700px; margin-right: -25px">                        
                         {% include evolution_years.html %}
                     </div>
-                        <h3 style="text-align: left; vertical-align: center;">What is the evolution of the percentage of female quoted accross the years?</h3>
-                        <p style="text-align:justify;">
+                        <h3 style="text-align: left; vertical-align: center; margin-right: 5px;">What is the evolution of the percentage of female quoted accross the years?</h3>
+                        <p style="text-align:justify; margin-right: 5px">
                                The percentage of female quotes gradually increases for the UK, reaching a maximum in 2019 with 26.81 <span>&#37;</span>, whereas it can remains rather constant for the other two countries. Surprisingly, an abrupt decrease appears in 2020. Could that be due to the Corona pandemic, during which more health care professionals were quoted than usual? Could this confirm the gender disparity in high-level jobs and positions in the medical field? (numbers?) This questions goes beyond the scope of this country-based analysis and could be a research question on its own. <br><br>
                                Again, the trends of South Africa and USA support our first impressions (<span style="color: red;">which were what?</span>). Only in 2016 did the USA quote more females than South Africa. In 2016, the presidential election took place, as well as the famous rivality between Donald Trump and Hillary Clinton, which was omnipresent in the media. Indeed, it may be very interesting to focus on the unique speakers and their impact on the gender representation in the media. An average for each year does not account for the diversity of quoted females, and one unique female may be very often quoted, biasing thus the previous analysis.<br><br>
                                The evolution of female quotes for the UK is encouraging but what if it is always the same female that is quoted? On the contrary, the number of distinct speakers might increase in the USA and South Africa which could be seen as counterbalancing the fact that their percentage stays constant.
@@ -84,12 +84,12 @@
          
         
             
-                <div style="height:600px;clear:both">
+                <div style="height:650px;clear:both">
                     <div style="float: left; width:50%; margin-right:5px;height: min-content;">                    
                         {% include networkx_unique_speakers.html %}
                         <p style="font-size:9">Fly over the nodes to have more info on the age and exact number of quotes </p>
                     </div>
-                    <h3 style="text-align: left; vertical-align: center;">Who are the most quoted people?</h3>
+                    <h3 style="text-align: left; vertical-align: center; margin-left:5px;">Who are the most quoted people?</h3>
                     <p style="text-align:justify; margin-left: 5px;">
                                 The interactive network shows the top 3 speakers for each country and gender, in terms of number of occurrences in the dataset. The size of a node is related to the proportion of quotes from this particular speaker in the country that quoted him/her and the colors stand for gender. <br><br>
                                 Here again, the unequal gender representation is manifested, since for all countries, all the <span style="color: #529dc8;">male nodes</span> are bigger than the <span style="color: #cc78bc;">female nodes</span>. Only the UK seems to have a "fair" repartition of nodes and a more diverse spectrum of speakers. Donald Trump with its many designations (?) is on its own the Top-3 of males in the american press with about 1/4 of the american quotes from 2015 to 2020. Indeed he was the President of the USA from 2016 to 2020 and was omnipresent in all categories. Interestingly, the 3 most quoted females in South Africa are all involved in politics and in the age range of 50-70 years old. On the other hand, Katie Price and Meghan Markle are media personalities and much younger. This stresses out how the age of the speakers can be crucial and determinant for his/her presence in the media, and this depending on the country. 
@@ -99,7 +99,7 @@
                 
 
                 <div style="height:300px;">
-                    <div style="background-color: #0a9396; width:600px; margin:auto">
+                    <div style="background-color: #40916c; width:600px; margin:auto">
                         <p style="color:white; padding: 13px; font-weight: bold"> For 100 female quotes, 10 originate from different speakers in South Africa, but only 5 and 2 for the United Kingdom and the United States of America, respectively</p>
                     <!--
                     real percentages UK: 5.11 %, USA: 2.19 %, SA: 10.11 %
@@ -121,12 +121,12 @@
                 <div style="height:80px">
                     <h3>Does age determine who will be quoted?</h3> 
                 </div>
-                <div style="height:500px;width:800px;clear:both;text-align: center; margin-left: 200px;">
+                <div style="height:500px;width:800px;clear:both;text-align: center; margin-left: 150px;">
                         {% include age_range.html %}
                     </div>
                 <div style="height:500px;">                    
                     <p style="text-align:justify;vertical-align:left;">
-                        Above, the age distribution is shown for the 2 genders. The difference between countries is obvious and the one between gender even more. While the distribution of the male ages is only little surprining, with a slight shift towards older males for South Africa, the one of the female is very dependent on the media's country of origine. 37.8 <span>&#37;</span> of the quoted female in South Africa belong to the age interval of 60-70 years old, which is in total consistency with the top 3 female unique speakers from the previous network. Regarding the UK, one can clearly see that the distribution is skewed towards younger female. This could also be explained by the network above, with two young females appearing in the top 3 for UK, on contrary to the other 2 countries. The top 3 however cannot justify these observation in the age distribution on its own. Indeed, since the proportion of female unique speakers (see percentages above) is much lower for the USA than for South Africa, one could expect Hilary Clinton and Nanci Pelosi to have a big influence on the age distribution of females. This is however not the case here. A possible explanation for this contradiction is the fact that, despite having quoted some females only proportinally to their number of quotes, these females are very well distributed over the age intervals as one can see from the table below.  
+                        Above, the age distribution is shown for the 2 genders, depending on the country The difference between countries is clear and the one between genders even more. Hvaing seen the top speakers and the typical profiles of males, the distribution of the males' ages is not very surpising. For females however, the distribution of the age appears to vary in function of the country in question. 37.8 <span>&#37;</span> of the quoted females in South Africa belong to the age interval of 60-70 years old, which is consistent with the top 3 female unique speakers from the previous network. Regarding the UK, one can clearly see that the distribution is skewed towards younger females. This could also be explained by the network above, with two young females appearing in the top 3 for UK, on contrary to the other two countries. The top 3 however cannot justify these observation in the age distribution on its own. Indeed, since the proportion of distinct female speakers (see percentages above) is much lower for the USA than for South Africa, one could expect Hillary Clinton and Nancy Pelosi to have a big influence on the age distribution of females. This is however not the case here. A possible explanation for this contradiction is the fact that, despite having quoted some females only proportinally to their number of quotes, these females are very well distributed over the age intervals as one can see from the table below.  <span style="color: red">Are we including a tabel??</span>
 
                         <!--
                         count    38365.000000
@@ -142,22 +142,13 @@
                 </div>
 
                 <div style="width:100%;background-color: white;clear: both;">
-                    <h4>What are the media that quoted the most those top 1 speakers ?</h4>
-                    <h5>Are they respected media ? Popular ones ?</h5>
+                    <h3>What are the media that quoted the most those top 1 speakers ?</h3>
                     <p>
+                        <span style="color: red"> Urgent to do</span>
+                        Are they respected media ? Popular ones ?
                         Add some description about which are the media sources that generate the top 1 speaker. We expect them to coincide with popular and this could lead to analyse Part 2
                     </p>
                 </div>
-                
-                <br/>
-
-                <br/>
-                <br/>
-                
-                <br/>
-                <br/>
-
-                
     
             </div>
         </div>
