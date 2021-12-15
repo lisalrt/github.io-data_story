@@ -87,21 +87,20 @@
                 <div style="height:600px;clear:both">
                     <div style="float: left; width:50%; margin-right:5px;height: min-content;">                    
                         {% include networkx_unique_speakers.html %}
+                        <p style="font-size:9">Fly over the nodes to have more info on the age and exact number of quotes </p>
                     </div>
                     <h3 style="text-align: left; vertical-align: center;">Who are the most quoted people?</h3>
-                    <p style="text-align:justify;">
+                    <p style="text-align:justify; margin-left: 5px;">
                                 The interactive network shows the top 3 speakers for each country and gender, in terms of number of occurrences in the dataset. The size of a node is related to the proportion of quotes from this particular speaker in the country that quoted him/her and the colors stand for gender. <br><br>
                                 Here again, the unequal gender representation is manifested, since for all countries, all the <span style="color: #529dc8;">male nodes</span> are bigger than the <span style="color: #cc78bc;">female nodes</span>. Only the UK seems to have a "fair" repartition of nodes and a more diverse spectrum of speakers. Donald Trump with its many designations (?) is on its own the Top-3 of males in the american press with about 1/4 of the american quotes from 2015 to 2020. Indeed he was the President of the USA from 2016 to 2020 and was omnipresent in all categories. Interestingly, the 3 most quoted females in South Africa are all involved in politics and in the age range of 50-70 years old. On the other hand, Katie Price and Meghan Markle are media personalities and much younger. This stresses out how the age of the speakers can be crucial and determinant for his/her presence in the media, and this depending on the country. 
                     </p>
                 </div>
 
-                <div style='text-align: left;font-size: 9'>
-                Fly over the nodes to have more info on the age and exact number of quotes 
-                </div>
+                
 
                 <div style="height:300px;">
-                    <div style="background-color: #485058; width:600px; margin:auto">
-                        <p style="color:white; padding: 13px; font-weight: bold"> Over 100 female quotes, 10 quotes originate from different speakers in South Africa, against 5 and only 2 for the United Kingdom and the United States of America, respectively</p>
+                    <div style="background-color: #0a9396; width:600px; margin:auto">
+                        <p style="color:white; padding: 13px; font-weight: bold"> For 100 female quotes, 10 originate from different speakers in South Africa, but only 5 and 2 for the United Kingdom and the United States of America, respectively</p>
                     <!--
                     real percentages UK: 5.11 %, USA: 2.19 %, SA: 10.11 %
                     -->
@@ -122,11 +121,11 @@
                 <div style="height:80px">
                     <h3>Does age determine who will be quoted?</h3> 
                 </div>
-                <div style="height:500px;width:800px;clear:both;text-align: center; margin-left: 100px;">
+                <div style="height:500px;width:800px;clear:both;text-align: center; margin-left: 200px;">
                         {% include age_range.html %}
                     </div>
                 <div style="height:500px;">                    
-                    <p style="text-align:left;vertical-align:left;">
+                    <p style="text-align:justify;vertical-align:left;">
                         Above, the age distribution is shown for the 2 genders. The difference between countries is obvious and the one between gender even more. While the distribution of the male ages is only little surprining, with a slight shift towards older males for South Africa, the one of the female is very dependent on the media's country of origine. 37.8 <span>&#37;</span> of the quoted female in South Africa belong to the age interval of 60-70 years old, which is in total consistency with the top 3 female unique speakers from the previous network. Regarding the UK, one can clearly see that the distribution is skewed towards younger female. This could also be explained by the network above, with two young females appearing in the top 3 for UK, on contrary to the other 2 countries. The top 3 however cannot justify these observation in the age distribution on its own. Indeed, since the proportion of female unique speakers (see percentages above) is much lower for the USA than for South Africa, one could expect Hilary Clinton and Nanci Pelosi to have a big influence on the age distribution of females. This is however not the case here. A possible explanation for this contradiction is the fact that, despite having quoted some females only proportinally to their number of quotes, these females are very well distributed over the age intervals as one can see from the table below.  
 
                         <!--
