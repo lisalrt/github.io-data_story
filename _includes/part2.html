@@ -65,7 +65,7 @@
                     <br/>
 
                     <div style="height: 320px;clear:both">
-                        <div style="float:left;width: 47%; height: 300px; background-color: #f8ad9d; margin: auto; padding:5px;border-radius: 5px;">
+                        <div style="float:left;width: 47%; height: 300px; background-color: #f5cac3; margin: auto; padding:5px;border-radius: 5px;">
                             <div style="width:60%; float:right;">
                                 <blockquote style="float:right; height: 100px;">
                                     <p style="padding: 15px; margin-bottom: 5%;background: #eee; border-radius: 5px; color:#495057; font-style: bold;font-size: 16px;text-align: justify;">“If my dad doesn't walk her down the aisle, then I will."</p>
@@ -151,26 +151,31 @@
 
 
                     
-                    <div style="height:1200px">
-                        <h3 style="text-align: center; vertical-align: center;">How do the media sources differ in female representation within culture and entertainment?</h3> 
+                    <div style="height:1500px">
+                        <h3 style="text-align: justify; vertical-align: center;">How do the media sources differ in female representation within culture and entertainment?</h3> 
                         <div style="width:700px; margin-left:180px;">
                             {% include percentage_quotes_culture_interactive_media.html %} 
                         </div>
                         <div>
-                            <p style="text-align: justify;">Add description: actually these graphs dont really answer the question of this part. But lets keep the graph and just change the question --> Do all of the media sources quote the same proportion of women in culture and entertainment?</p>
+                            <p style="text-align: justify;">A<p>Entertainment and culture were two categories were higher proportions of females were quoted. Do sources within respected and popular media have any differences? Apparently, not. Even within respected or popular media, the proportions can vary importantly. The higher proportion generally seen within popular media was observed before and can be seen here again. For culture, respected media even has a certain tendency to decrease the proportion of females in time, such as <span style="font-style:italic;">Reuters</span> or <spans tyle="font-style:italic;">Politico</span>. 
                             </p>                            
                         </div>
                         <div style="width:700px;margin-left:180px;">
                             {% include percentage_quotes_entertainment_interactive_media.html %}
-                        </div>                            
-                        <p style="text-align: justify;">Add description: actually these graphs dont really answer the question of this part. But lets keep the graph and just change the question --> Do all of the media sources quote the same proportion of women in culture and entertainment?</p>
-                        </p>
+                        </div> 
+                        <div>
+                            <p style="text-align: justify;">A<p>Within entertainment, there is more variation from one year to another, making a specific trend less evident. Generally, the respected media have lower proportions that-n the popular media. For example, <span style="font-style: italic;">msn</span> has above 40% of female quotes every year, while the threshold of 40% is only exceeded in one case: for <span style="font-style: italic">New York Times</span> in 2019 with 46.3%. <br><br>
+                            One media source in particular stands out: <span style="font-style: italic;">Reuters</span>. While other media sources increase and decreases, it is the only source that has a net decrease in female proporiton for both entertainment and culture. However, looking at the proportion of female quotes by Reuters globally and not within a category, the numbers only increase with time. Could this mean that more females in Reuters are being quoted in topics other than entertainment and culture?
+                            </p>                            
+                        </div>                           
+                        
                     </div>
                     
             
                     <div style="background-color: white; height:800px">
                         <h3>(2.5) Unsupervised clustering</h3>
-                        <p style="font-family: arial;">Take the sitenames found in (2.4) which apparently quote women more (with repetition, not unique). See if the topics in the quotes found corresponds to culture and entert. Or just to a comparison between 2 sitenames</p>
+                        <p style="font-family: arial;">
+                        Comparing reuters 2015 and 2017 females, but without defining topics. Do other topics appear? How do they change in time?</p>
                         {% include lda.html %}
                     </div>
 
