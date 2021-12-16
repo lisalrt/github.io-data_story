@@ -122,7 +122,7 @@
                     </div>
 
                                      
-                    <div style="height:800px">
+                    <div style="height:850px">
                         <h3 style="text-align: center; vertical-align: center;">Now let’s consider distinct speakers</h3> 
                         <div style="width:700px; float:right;">
                             {% include factor_male_for_female_interactive.html %}
@@ -143,7 +143,7 @@
 
 
                     <div style="height:600px">
-                        <img src="img/length_quote_combined_with_sex_symbol_culture_entairtainment.svg" style="float:right; width:500px;height:600px;margin-left:30px;">
+                        <img src="img/length_quote_combined_with_sex_symbol_culture_entairtainment.svg" style="float:right; width:500px;height:600px;margin-left:30px; margin-bottom: 30px;">
                         <h3 style="text-align: center; vertical-align: center;">Quote length in culture and entertainment</h3> 
                         <p style="text-align: justify;">Now that we have looked at the distribution of unique speakers based on gender for both types of media, let us take a look at the length of quotes for both the culture and entertainment categories. This could help us figure out if males get "greater" time to express themselves than females.
                         Females have a propensity to hold longer quotes in the popular media than males, although the pattern is the opposite in the respected media covering culture. Despite the fact that we placed our focus on these two issues, the trend of females holding shorter quotes than males holds true across all years and categories.
@@ -152,8 +152,13 @@
                     
                     <div style="height:1100px">
                         <h3 style="text-align: center; vertical-align: center;width:900px; margin-right: -500px;">Which media sources generated these quotes in culture and entertainment?</h3> 
-                            {% include percentage_quotes_culture_interactive_media.html %}
+                        <div style="width:700px;">
+                            {% include percentage_quotes_culture_interactive_media.html %} 
+                        </div>
+                        <div style="width:700px;">
                             {% include percentage_quotes_entertainment_interactive_media.html %}
+                        </div>
+                            
                         <p style="color: #FF0000;">Add description: actually these graphs dont really answer the question of this part. But lets keep the graph and just change the question --> Do all of the media sources quote the same proportion of women in culture and entertainment?</p>
                         </p>
                     </div>
