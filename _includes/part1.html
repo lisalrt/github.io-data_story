@@ -18,9 +18,11 @@
                 <div style="height: 1100px;">
                     <p style="text-align: justify;">
                         With gender equality being raised in a wide variety of domains, a data-backed analysis can help our society understand its current position and the steps it needs to take to improve. This project aims at analysing the status of females through the lens of media. <br><br>
-                        By using the <a href="https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf" target="_blank">Quotebank</a> dataset, a corpus of english quotations from a decade of news, the project provides insights on how gender is represented. The data in this project covers quotes published between 2015 and 2020. The site names at the origin of the quotes were extracted from the URLs of the article, which was provided in the Quotebank dataset. Based on <a href="https://www.4imn.com/top200/" target="_blank">this list</a>, which uses Google Page Rank and other independent web metrics for various search engines (more about the ranking method <a href="https://www.4imn.com/about/index.htm#ranking" target="_blank">here</a>), 116 sites were selected based on their web ranking scores. Only quotes whose source was within this list were kept for the study. This filtering allowed to reduce the media sources to the most known and common journals or sites. <span style="color: red">Could be cool to add how many quotes we used or some more detailed stats per year</span><br><br>
-                        <span style="text-align: center;">With this data, and in-depth analysis is done to understand: </span>
+                        By using the <a href="https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf" target="_blank">Quotebank</a> dataset, a corpus of english quotations from a decade of news, the project provides insights on how gender is represented. The data in this project covers quotes published between 2015 and 2020. The site names at the origin of the quotes were extracted from the URLs of the article, which was provided in the Quotebank dataset. Based on <a href="https://www.4imn.com/top200/" target="_blank">this list</a>, which uses Google Page Rank and other independent web metrics for various search engines (more about the ranking method <a href="https://www.4imn.com/about/index.htm#ranking" target="_blank">here</a>), 116 sites were selected based on their web ranking scores. Only quotes whose source was within this list were kept for the study. This filtering allowed to reduce the media sources to the most known and common journals or sites. <span style="color: red">Could be cool to add how many quotes we used or some more detailed stats per year</span><
                     </p>
+                    <p style="text-align: center;">
+                        With this data, and in-depth analysis is done to understand:                        
+                    </p>                   
 
                     <div style="width:55%; float: left;">
                         <h2 style="text-align:center; color: #6c757d"><span style="font-size:100px; font-family: 'Arial'; font-style: bold; color: #adb5bd;">"</span>How does female representation in media vary in different countries?</h2>
@@ -31,7 +33,7 @@
                     </div>
                     <br>
                     <div style="width:55%; float: left;">
-                        <h2 style="text-align:center; color: #6c757d">Do different media sources represent females differently?</h2>
+                        <h2 style="text-align:center; color: #6c757d">Do different types media sources represent females differently?</h2>
                     </div>
                     <br>
                     <div style="width:55%; float: right;">
@@ -44,7 +46,7 @@
                 <h1 style="text-transform: uppercase;">Who run the world?</h1>
                 <br/>
 
-                <div style="height:800px;margin:auto;">
+                <div style="height:850px;margin:auto;">
                     <div style="background-color: white; float: left; width:750px; margin: 5px;">                        
                         {% include Mean_percentage_Female_quotes.html %}
                          <!--{% include Mean_percentage_Female_quotes.html max-width="200px" caption="Trying"%}-->
@@ -60,10 +62,7 @@
                 <div style="background-color: #5296A5; width:500px; margin:auto;border-radius: 5px;">
                     <p style="color:white; padding: 5px; font-weight: bold;"> There is no country that quotes more females than males</p>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
+                
 
                 <div style="height:80px;">
                     <h3>Comparing female representation in 3 countries: <span style="color: #E5B25D;">UK</span>, <span style="color: #c13639;">USA</span> and <span style="color: #029e73;">South Africa</span>
@@ -74,7 +73,7 @@
                     <div style="background-color: white; float: right; width:700px; margin-right: -20px">                        
                         {% include evolution_years.html %}
                     </div>
-                        <h3 style="text-align: left; vertical-align: center; margin-right: 5px;">What is the evolution of the percentage of female quoted accross the years?</h3>
+                        <h3 style="text-align: justify; vertical-align: center; margin-right: 5px;">What is the evolution of the percentage of female quoted accross the years?</h3>
                         <p style="text-align:justify; margin-right: 5px">
                                The percentage of female quotes gradually increases for the UK, reaching a maximum in 2019 with 26.81 <span>&#37;</span>, whereas it can remains rather constant for the other two countries. Surprisingly, an abrupt decrease appears in 2020. Could that be due to the Corona pandemic, during which more health care professionals were quoted than usual? Could this confirm the gender disparity in high-level jobs and positions in the medical field? (numbers?) This questions goes beyond the scope of this country-based analysis and could be a research question on its own. <br><br>
                                Again, the trends of South Africa and USA support our first impressions (<span style="color: red;">which were what?</span>). Only in 2016 did the USA quote more females than South Africa. In 2016, the presidential election took place, as well as the famous rivality between Donald Trump and Hillary Clinton, which was omnipresent in the media. Indeed, it may be very interesting to focus on the unique speakers and their impact on the gender representation in the media. An average for each year does not account for the diversity of quoted females, and one unique female may be very often quoted, biasing thus the previous analysis.<br><br>
