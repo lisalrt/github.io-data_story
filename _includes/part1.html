@@ -113,7 +113,7 @@
                 </div>
          
         
-                <div style="height: 950px;clear:both;">
+                <div style="height: 750px;clear:both;">
                     <div style="float: left; width:65%; margin-right:5px; padding-right: 25px; height: min-content;">                    
                         {% include networkx_unique_speakers.html %}
                         <p style="font-size:15px">Fly over the nodes to have more info on the age and exact number of quotes </p>
@@ -121,9 +121,19 @@
                     <div>
                         <h3 style="text-align: left; vertical-align: center; margin-left:25px;">Who are the most quoted people?</h3>
                         <p style="text-align:justify; margin-left: 25px;">
-                                The speakers are now ranked according to the number of time they were quoted. The interactive network shows the top three speakers for each country and gender. The size of a node is proportional to the number of quotes from the speaker in the country in which he or she was cited, and the colors represent gender.<br><br>
-                                Here again, the unequal gender representation is unambiguous, since within each country, all the <span style="color: #529dc8;">male nodes</span> are bigger than the <span style="color: #cc78bc;">female nodes</span>. Donald Trump, as former president of the United States, was present on an international scene and in many different topics. He consequently appears in the top three of all countries. The other main speakers in the USA are all politicians, with an exception for Pope Francis. The most quoted females in the USA are Hillary Clinton and Nancy Pelosi, who are both females above 70 years old. However, in the UK the most quoted female speakers tend to be celebrities or entertainment figures, such as Meghan Markle and Katie Price, who are younger females. On the other hand, all the males in the UK work in politics. In South Africa, the most prominent speakers are once again all political figures. There, the three most quoted females fall in the age range of 50-70 years old. With these results in mind, one can see how the categories as well as the age seem to determine the proportion of females within each country.
-                    </div>                    
+                            The speakers are now ranked according to the number of time they were quoted. The interactive network shows the top three speakers for each country and gender. The size of a node is proportional to the number of quotes from the speaker in the country in which he or she was cited, and the colors represent gender.<br><br>
+                        </p>
+                    </div> 
+                    <div style="height:450px;">
+                        <div style="background-color: #065a60; width:600px; margin:auto;border-radius: 5px;"; id="distinct_speaker_countries">
+                            <p style="color:white; padding: 13px; font-weight: bold;"> For 100 female quotes, 10 originate from distinct speakers in South Africa, but only 5 and 2 for the United Kingdom and the United States of America, respectively</p>
+                        </div> 
+                        <p style="text-align:justify; margin-left: 25px;">
+                            Here again, the unequal gender representation is unambiguous, since within each country, all the <span style="color: #529dc8;">male nodes</span> are bigger than the <span style="color: #cc78bc;">female nodes</span>. Donald Trump, as former president of the United States, was present on an international scene and in many different topics. He consequently appears in the top three of all countries. The other main speakers in the USA are all politicians, with an exception for Pope Francis. The most quoted females in the USA are Hillary Clinton and Nancy Pelosi, who are both females above 70 years old. However, in the UK the most quoted female speakers tend to be celebrities or entertainment figures, such as Meghan Markle and Katie Price, who are younger females. On the other hand, all the males in the UK work in politics. In South Africa, the most prominent speakers are once again all political figures. There, the three most quoted females fall in the age range of 50-70 years old. With these results in mind, one can see how the categories as well as the age seem to determine the proportion of females within each country.
+                        </p>
+                    </div>
+                        
+                                       
                 </div>
 
 
@@ -132,7 +142,6 @@
                         <p style="color:white; padding: 13px; font-weight: bold;"> For 100 female quotes, 10 originate from distinct speakers in South Africa, but only 5 and 2 for the United Kingdom and the United States of America, respectively</p>
                     </div> 
                     <p style="color: red;">What is the link to this previous comment? I feel like it doesnt relate that luch to the previous paragraph</p>
-                    
                 </div>
 
                 <div style="height:80px">
