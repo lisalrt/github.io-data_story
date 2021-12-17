@@ -24,7 +24,7 @@ social:
   #  url: http://stackoverflow.com/questions/tagged/jekyll
   #- title: bitbucket
   #  url: http://bitbucket.org/jekyll
-  - title: Click here for more
+  - title: github
     url: https://github.com/epfl-ada/ada-2021-project-aibohphobia/
 
 # Build settings
