@@ -34,4 +34,5 @@ The code may be found [here](https://github.com/epfl-ada/ada-2021-project-aibohp
 The site was created using the Grayscale Jekyll theme.
 
 Have a pleasant read and may the future be more equal!
+
 The Aibohphobia Team
