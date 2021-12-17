@@ -21,7 +21,7 @@
 
 
                     <div style="height:550px; margin-bottom: 20px;">
-                        <img src="img/prop_type_media_females_lineplot.svg" style="float:right; width:550px;height:500px;margin-left:30px;">
+                        <img src="img/prop_type_media_females_lineplot.svg" style="float:right; width:550px;height:500px;margin-left:30px;margin-right: 0px;">
                         <h3 style="text-align: left; vertical-align: left;">And how do they evolve over the years?</h3> 
                         <p style="text-align:justify;">At a first glance, how do these two groups of media differ in female representation through quotes? While one would hope that respected media would perform better in terms of equal gender representation, this figure shows that it is not the case. In fact, a gap is present between popular and respected media every single year. <br><br> The increase in proportion of females over the years in either group is encouraging, with the drop in 2020 likely present due to the reduced number of quotes collected for that year. The increasing trend surely reflects the awareness on gender issues that has increasingly been voiced and mediatised.<br> 
                         </p>
@@ -150,7 +150,7 @@
                     </div>
 
                     <div style="height:500px">
-                        <img src="img/length_quote_combined_with_sex_symbol_culture_entairtainment.svg" style="float:right; width:50%;margin-right:0px; margin-top: 50px;padding:10px">
+                        <img src="img/length_quote_combined_with_sex_symbol_culture_entairtainment.svg" style="float:right; width:50%;margin-right:0px; margin-top: 50px;padding:10px;margin-left: 15px;">
                         <h3 style="text-align: left; vertical-align: center; margin-right: 10px;">How is time allocated between the genders?</h3> 
                         <p style="text-align:justify; margin-right: 10px;"> Indeed, the plot to the right helps figuring out if males get more time to express themselves than females.
                         Females have a propensity to hold longer quotes in the popular media than males, although the pattern is the opposite in the respected media covering culture. Despite the fact that the focus was placed on these two categories, the trend of females holding shorter quotes than males holds true across all years and categories.
@@ -163,7 +163,7 @@
                             {% include percentage_quotes_culture_interactive_media.html %} 
                         </div>
                         <div>
-                            <p style="text-align: justify;">Entertainment and culture were the two categories where the greatest proportion of females was certified. Do sources within respected and popular media have any differences in these precise categories? Apparently, yes. Even within respected or popular media, the proportions can vary notably. The overall highest proportion within popular media observed before can be detected here again. For culture, the proportion of females in respected media even has a tendency to decrease with time, such as for <span style="font-style: italic;color: #F96902;">Reuters</span> or <span style="font-style: italic; color: #aa0206;">Politico</span>.<p> 
+                            <p style="text-align: justify;">Entertainment and culture were the two categories where the greatest proportion of females was observed. Do sources within respected and popular media have any differences in these precise categories? Apparently, yes. Even within respected or popular media, the proportions can vary notably. The overall highest proportion within popular media observed before can be detected here again. For culture, the proportion of females in respected media even has a tendency to decrease with time, such as for <span style="font-style: italic;color: #F96902;">Reuters</span> or <span style="font-style: italic; color: #aa0206;">Politico</span>.<p> 
                             </p>                            
                         </div>
                         <div style="width:900px;  margin-right: -80px;">
@@ -171,7 +171,7 @@
                         </div> 
                         <div>
                             <p style="text-align: justify;">
-                                Within entertainment, there is more variation from one year to another, making a specific trend less evident. For the sake of illustration, BBC present in both respected and popular media jumps from 15.8% to 35.7% in one year before decaying again to 13.9% in 2018. On average, the respected media do seem to have lower proportions of female than the popular media. For example, <span style="font-style: italic;">msn</span> has above 50% of female quotes every year, while the threshold of 40% is only exceeded in one case for the respected media: 46.3% for <span style="font-style: italic">New York Times</span> in 2019. 
+                                Within entertainment, there is more variation from one year to another, making a specific trend less evident. For the sake of illustration, BBC present in both respected and popular media jumps from 15.8% to 35.7% in one year before decaying again to 13.9% in 2018. On average, the respected media do seem to have lower proportions of female than the popular media. For example, <span style="font-style: italic;">msn</span> has above 50% of female quotes certain years, while the threshold of 40% is only exceeded in one case for the respected media: 46.3% for <span style="font-style: italic">New York Times</span> in 2019. 
                                 <br><br>
 
                             One media source in particular stands out: <span style="font-style: italic;">Reuters</span>. While other media sources increase and decrease, it is the only source that has a net decline in female proportion for both entertainment and culture. However, looking at the proportion of female quotes in </span style="font-style: italic;">Reuters</span> globally and not within a category, the numbers only increase with time (see plot <a href="#Global_Reuters">here</a>). Could this mean that more females in <span style="font-style: italic;">Reuters</span> are being quoted in topics other than entertainment and culture?
@@ -187,7 +187,7 @@
                         <p style="text-align: justify;">
                              If the proportion is decreasing in entertainment and culture, but the whole average is increasing, then females must be quoted more in other domains for <span style="font-style: italic;">Reuters</span> particularly. The previous analysis was performed by providing a list of topics and sorting the quotes accordingly. This could lead to a bias, as not all possible categories are considered. Furthermore, the category was inferred from the URL of the source of the quote, supposing that main keywords or the type of news is included in the URL itself. Again, this might not always be representative of the quote itself. <br><br>
 
-                            By using natural language processing, quotes are tokenized, lemmatized, entities are detected, stopwords are removed and bigrams are included. A Latent Dirichlet Algorithm (LDA) is applied to a subset of this data. <span style="font-style: italic;">Reuter</span>'s' quotes are analysed for the year 2015 and 2017, for both genders, and words from the quotes are clustered into 5 topics through unsupervised learning.<br><br>
+                            By using natural language processing, quotes are tokenized, lemmatized, entities are detected, stopwords are removed and bigrams are included. A Latent Dirichlet Algorithm (LDA) is applied to a subset of this data. <span style="font-style: italic;">Reuter</span>'s quotes are analysed for the year 2015 and 2017, for both genders, and words from the quotes are clustered into 5 topics through unsupervised learning.<br><br>
                         </p>
                         <img src="img/lda_results.png" style="width:700px; margin-bottom: 50px;">
                         <p style="text-align: justify;">
